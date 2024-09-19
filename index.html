@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        section{
+            padding: 60px 40px;
+        }
+        .img-fluid{
+            width: 25%;
+        }
+        @media only screen and (max-width: 600px){
+            .img-fluid{
+            width: 70%;
+            margin: 60px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section>
+          <nav class="navbar bg-muted navbar-expand-lg text-white">
+             <div class="container-fluid">
+                 <a href="#" class="navbar-brand">Monish</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon w-4"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="#about">About</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link disabled" aria-disabled="true" href="#disabled">Disabled</a>
+                          </li>
+                       </ul>
+                  </div>
+             </div>
+          </nav>
+    </section>
+    <section id="home" class="d-lg-flex justify-content-evenly align-items-center">
+            <div>
+                <h1 class="sm-h4 lg-h1">Monish Shrivastva</h1>
+                <p class="lead text-black">At Post Chennai Software Engineer in XYZ Company</p>
+                <a href="./assets/Monish_Lal_Resume.pdf"  download class="btn bg-info mx-auto" download>Download Resume</a>
+            </div>
+            <img src="./assets/monish.jpg" class="img-fluid rounded-circle w-8" alt="monish_img">
+
+    </section>
+    <section  id="contact" class="container-fluid bg-info-emphasis">
+            <div class="mx-auto text-center">
+                <h1>Contact</h1>
+                <p class="lead">Feel free to contact with me</p>
+            </div>
+            <div>
+            <form class="needs-validation">
+                <div class="col-sm-4 mx-auto my-4">
+                     <label for="name" class="form-label">Name:</label>
+                     <input type="name" type="text" class="form-control" id="name" value="" placeholder="john doe"/>
+                     <div class="valid-feedback">
+                        Looks good!
+                     </div>
+                </div>
+                <div class="col-sm-4 mx-auto my-4">
+                     <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  required>
+                     <div class="valid-feedback">
+                           Looks good!
+                     </div>
+                </div>
+                <div class="col-sm-4 mx-auto my-4">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mx-auto col-sm-4 p-2">
+                    <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="disabled">
+        <a class="btn text-decoration-underline" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            More about me
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Monish Lal Shrivastva</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Monish is Bhagyashree's friend, who described her as possessing several admirable attributes in a cute way. 
+                According to Monish, Bhagyashree is intelligent, well-behaved, and has a pleasant appearance. 
+                He also mentioned that she can get angry at times but has a great sense of thinking capacity, 
+                combining these traits in a charming and cute manner.
+              </div>
+             </div>
+          </div> 
+    </section>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Check mentioned info</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thank you for the reminder! please cross-checked the information before providing it.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="#home" type="button" class="btn btn-info">Understood</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
